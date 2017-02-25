@@ -8,18 +8,38 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+protocol LoginViewDelegate {
+  
+}
 
+class LoginViewController: GlobalViewController, UIWebViewDelegate, LoginViewDelegate {
+
+  @IBOutlet weak var webview: UIWebView!
+  
+  var presenter : LoginPresenter?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    webview.delegate = self
+    if let url = URL(string: Environment.Urls.kOAuth) {
+      webview.loadRequest(URLRequest(url: url))
+    }
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-
-
+  
+  //MARK: - UIWebViewDelegate
+  func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+    if let url = request.url?.absoluteString, url.contains("access_token") {
+      self.retrieveAccessToken(url: url)
+    }
+    return true
+  }
+  
+  //MARK: - LoginViewDelegate
+  
 }
 

@@ -7,6 +7,9 @@ target 'myinsta' do
 
   # Pods for myinsta
   pod 'RxSwift', '~> 3.2'
+  pod 'RxCocoa', '~> 3.2'
   pod 'Alamofire', '~> 4.3'
   pod 'AlamofireImage', '~> 3.2'
+  pod 'Moya', '~> 8.0'
+  pod 'MoyaObjectMapper', '~> 1.0'
 end

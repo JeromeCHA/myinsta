@@ -12,8 +12,18 @@
 		BADB49431E6066C900278A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADB49411E6066C900278A4D /* Main.storyboard */; };
 		BADB49451E6066C900278A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BADB49441E6066C900278A4D /* Assets.xcassets */; };
 		BADB49481E6066C900278A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADB49461E6066C900278A4D /* LaunchScreen.storyboard */; };
-		BADB49561E607B1000278A4D /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB49551E607B1000278A4D /* LoginInteractor.swift */; };
+		BADB49561E607B1000278A4D /* RetreiveTokenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB49551E607B1000278A4D /* RetreiveTokenInteractor.swift */; };
 		BADB49581E607B2B00278A4D /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB49571E607B2B00278A4D /* LoginRouter.swift */; };
+		BADB495B1E607FF200278A4D /* GlobalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB495A1E607FF200278A4D /* GlobalViewController.swift */; };
+		BADB495E1E60808900278A4D /* MIChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB495D1E60808900278A4D /* MIChart.swift */; };
+		BADB49601E60831A00278A4D /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB495F1E60831A00278A4D /* Constantes.swift */; };
+		BADB49621E60833F00278A4D /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB49611E60833F00278A4D /* LoginPresenter.swift */; };
+		BADB49641E60845100278A4D /* GlobalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB49631E60845100278A4D /* GlobalRouter.swift */; };
+		BADB49681E60884700278A4D /* InstagramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB49671E60884700278A4D /* InstagramService.swift */; };
+		BADB496A1E608A2400278A4D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB49691E608A2400278A4D /* Environment.swift */; };
+		BADB496C1E608D9000278A4D /* ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB496B1E608D9000278A4D /* ServicesManager.swift */; };
+		BADB496E1E609CC700278A4D /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB496D1E609CC700278A4D /* UserDefaultsManager.swift */; };
+		BADB49701E609E0C00278A4D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB496F1E609E0C00278A4D /* StringExtension.swift */; };
 		CC05A59DF6BEBD2C176704D5 /* Pods_myinsta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A11621BAF196829456C43E /* Pods_myinsta.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +38,18 @@
 		BADB49441E6066C900278A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BADB49471E6066C900278A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BADB49491E6066C900278A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BADB49551E607B1000278A4D /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		BADB49551E607B1000278A4D /* RetreiveTokenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetreiveTokenInteractor.swift; sourceTree = "<group>"; };
 		BADB49571E607B2B00278A4D /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		BADB495A1E607FF200278A4D /* GlobalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalViewController.swift; sourceTree = "<group>"; };
+		BADB495D1E60808900278A4D /* MIChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIChart.swift; sourceTree = "<group>"; };
+		BADB495F1E60831A00278A4D /* Constantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		BADB49611E60833F00278A4D /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		BADB49631E60845100278A4D /* GlobalRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalRouter.swift; sourceTree = "<group>"; };
+		BADB49671E60884700278A4D /* InstagramService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramService.swift; sourceTree = "<group>"; };
+		BADB49691E608A2400278A4D /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		BADB496B1E608D9000278A4D /* ServicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
+		BADB496D1E609CC700278A4D /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		BADB496F1E609E0C00278A4D /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +93,7 @@
 		BADB493C1E6066C900278A4D /* myinsta */ = {
 			isa = PBXGroup;
 			children = (
+				BADB49591E607FD800278A4D /* Common */,
 				BADB494F1E6075FB00278A4D /* Login */,
 				BADB493D1E6066C900278A4D /* AppDelegate.swift */,
 				BADB49411E6066C900278A4D /* Main.storyboard */,
@@ -113,6 +134,7 @@
 		BADB49521E60762000278A4D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				BADB49611E60833F00278A4D /* LoginPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -120,7 +142,7 @@
 		BADB49531E60762500278A4D /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				BADB49551E607B1000278A4D /* LoginInteractor.swift */,
+				BADB49551E607B1000278A4D /* RetreiveTokenInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -131,6 +153,46 @@
 				BADB493F1E6066C900278A4D /* LoginViewController.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		BADB49591E607FD800278A4D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BADB49651E60882F00278A4D /* Services */,
+				BADB495C1E60806E00278A4D /* Global */,
+				BADB495D1E60808900278A4D /* MIChart.swift */,
+				BADB495F1E60831A00278A4D /* Constantes.swift */,
+				BADB49691E608A2400278A4D /* Environment.swift */,
+				BADB496D1E609CC700278A4D /* UserDefaultsManager.swift */,
+				BADB496F1E609E0C00278A4D /* StringExtension.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		BADB495C1E60806E00278A4D /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				BADB495A1E607FF200278A4D /* GlobalViewController.swift */,
+				BADB49631E60845100278A4D /* GlobalRouter.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		BADB49651E60882F00278A4D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BADB49661E60883700278A4D /* Instagram */,
+				BADB496B1E608D9000278A4D /* ServicesManager.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		BADB49661E60883700278A4D /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				BADB49671E60884700278A4D /* InstagramService.swift */,
+			);
+			name = Instagram;
 			sourceTree = "<group>";
 		};
 		CF8D2BBC5FB1C4ED25EC9ABC /* Pods */ = {
@@ -266,10 +328,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADB49621E60833F00278A4D /* LoginPresenter.swift in Sources */,
+				BADB495E1E60808900278A4D /* MIChart.swift in Sources */,
 				BADB49401E6066C900278A4D /* LoginViewController.swift in Sources */,
+				BADB496E1E609CC700278A4D /* UserDefaultsManager.swift in Sources */,
+				BADB496C1E608D9000278A4D /* ServicesManager.swift in Sources */,
 				BADB493E1E6066C900278A4D /* AppDelegate.swift in Sources */,
 				BADB49581E607B2B00278A4D /* LoginRouter.swift in Sources */,
-				BADB49561E607B1000278A4D /* LoginInteractor.swift in Sources */,
+				BADB495B1E607FF200278A4D /* GlobalViewController.swift in Sources */,
+				BADB49701E609E0C00278A4D /* StringExtension.swift in Sources */,
+				BADB49681E60884700278A4D /* InstagramService.swift in Sources */,
+				BADB496A1E608A2400278A4D /* Environment.swift in Sources */,
+				BADB49641E60845100278A4D /* GlobalRouter.swift in Sources */,
+				BADB49601E60831A00278A4D /* Constantes.swift in Sources */,
+				BADB49561E607B1000278A4D /* RetreiveTokenInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

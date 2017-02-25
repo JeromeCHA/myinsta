@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="myinsta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="myinsta" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -34,9 +34,13 @@
                             <constraint firstItem="bBQ-xZ-DN8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aqL-DG-6JR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webview" destination="bBQ-xZ-DN8" id="mJj-pQ-tqV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-118" y="32"/>
         </scene>
     </scenes>
 </document>
