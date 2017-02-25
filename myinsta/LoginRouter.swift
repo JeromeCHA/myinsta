@@ -30,4 +30,12 @@ class LoginRouter: GlobalRouter {
     loginViewController?.presenter = presenter
   }
   
+  
+  //MARK: - Redirect
+  func goToHome() {
+    if let loginVC = self.loginViewController, let homeVC = HomeRouter().getInitViewController() {
+      super.presentViewControllerWithNavigationController(from: loginVC, to: homeVC)
+    }
+  }
+  
 }

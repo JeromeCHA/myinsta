@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  myinsta
+
+  Created by Jérôme Cha on 25/02/2017.
+  Copyright © 2017 Jérôme Cha. All rights reserved.
+*/
+
+"button_close"="Close";
+
+"alert_title_error"="Oups";
+
+"alert_message_error"="An error occurs";

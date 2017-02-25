@@ -17,22 +17,22 @@ enum RetreiveTokenInteractorError : Error {
 
 class RetreiveTokenInteractor: NSObject {
   
+  // The regex will be use to retreive access token from URL
   fileprivate let regexp = "[^=]+$"
   
-  //Retrieve and save access token
-  //with a regex
+  // Retrieve and save access token
+  // with a regex
   func retrieveAccessToken(url:String) -> Observable<String> {
     return Observable.create({ observer in
       let cancel = Disposables.create()
       
-      if let range = url.range(of:self.regexp, options: .regularExpression) {
-        let accessToken = url.substring(with:range)
+      if let accessToken = url.retrieveFrom(regex: self.regexp) {
         #if DEBUG
           print("URL : \(url)")
           print("REGEX : \(accessToken)")
         #endif
         // if the access_token is not empty, save it on the UserDefaults
-        if accessToken.trimmed != "" {
+        if accessToken != "" {
           // save the access_token
           UserDefaultsManager.saveString(key: Constantes.UserDefaults.kAccessToken, andValue: accessToken)
           observer.onNext(accessToken)

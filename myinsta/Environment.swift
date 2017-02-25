@@ -19,6 +19,7 @@ struct Environment {
   }
   
   struct Urls {
+    static let kInstaAPI = "\(Environment.BaseUrls.kInstagram)/v1"
     static let kRedirectUri = "http://localhost"
     static let kOAuth = "\(Environment.BaseUrls.kInstagram)/oauth/authorize/?client_id=\(Environment.Keys.kInstaClientId)&redirect_uri=\(kRedirectUri)&response_type=token"
   }

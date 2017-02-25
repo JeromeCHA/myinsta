@@ -19,14 +19,16 @@ class LoginPresenter: NSObject {
   fileprivate let disposeBag = DisposeBag()
   
   func retrieveAccessToken(url:String) {
+    // retreive the access token
     retreiveTokenInteractor?.retrieveAccessToken(url: url)
-      .flatMap({ (accessToken) -> ObservableConvertibleType in
-        <#code#>
-      })
       .observeOn(MainScheduler.asyncInstance)
-      .subscribe(onNext: { (<#String#>) in
-      <#code#>
-    }, onError: <#T##((Error) -> Void)?##((Error) -> Void)?##(Error) -> Void#>, onCompleted: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>, onDisposed: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>)
+      .subscribe(onError: { (error) in
+        // Display message
+        self.viewDelegate?.displayErrorMessage()
+      }, onCompleted: {
+        // Success -> go to home
+        self.router?.goToHome()
+      }).addDisposableTo(self.disposeBag)
   }
   
 }

@@ -10,54 +10,56 @@ import UIKit
 import Moya
 
 enum InstagramService {
-  //https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
-  case oauth(clientId:String, redirectUri:String, responseType:String)
+  case userInfo
 }
 
 // MARK: - TargetType Protocol Implementation
 extension InstagramService: TargetType {
-  var baseURL: URL { return URL(string: Environment.BaseUrls.kInstagram)! }
+  var baseURL: URL { return URL(string: Environment.Urls.kInstaAPI)! }
   
   var path: String {
     switch self {
-    case .oauth:
-      return "/oauth/authorize"
+    case .userInfo:
+      return "/users/self"
     }
   }
   
   var method: Moya.Method {
     switch self {
-    case .oauth:
+    case .userInfo:
       return .get
     }
   }
   
   var parameters: [String: Any]? {
     switch self {
-    case .oauth(let clientId, let redirectUri, let responseType):
-      return ["client_id": clientId,
-              "redirect_uri":redirectUri,
-              "response_type":responseType]
+    case .userInfo:
+      // put the access token in the parameters
+      if let accessToken = UserDefaultsManager.getString(key: Constantes.UserDefaults.kAccessToken) {
+        return [Constantes.Backend.Params.kAccessToken: accessToken]
+      } else {
+        return nil
+      }
     }
   }
   
   var parameterEncoding: ParameterEncoding {
     switch self {
-    case .oauth:
+    case .userInfo:
       return URLEncoding.default
     }
   }
   
   var sampleData: Data {
     switch self {
-    case .oauth:
+    case .userInfo:
       return "".data(using: .utf8)!
     }
   }
   
   var task: Task {
     switch self {
-    case .oauth:
+    case .userInfo:
       return .request
     }
   }

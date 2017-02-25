@@ -9,7 +9,7 @@
 import UIKit
 
 protocol LoginViewDelegate {
-  
+  func displayErrorMessage()
 }
 
 class LoginViewController: GlobalViewController, UIWebViewDelegate, LoginViewDelegate {
@@ -33,13 +33,16 @@ class LoginViewController: GlobalViewController, UIWebViewDelegate, LoginViewDel
   
   //MARK: - UIWebViewDelegate
   func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-    if let url = request.url?.absoluteString, url.contains("access_token") {
-      self.retrieveAccessToken(url: url)
+    if let url = request.url?.absoluteString, url.contains(Constantes.Backend.Params.kAccessToken) {
+      // call the presenter to retrieve the token
+      self.presenter?.retrieveAccessToken(url: url)
     }
     return true
   }
   
   //MARK: - LoginViewDelegate
-  
+  func displayErrorMessage() {
+    self.showAlert(title: Constantes.Strings.kAlertTitleError.localized, message: Constantes.Strings.kAlertMessageError.localized)
+  }
 }
 

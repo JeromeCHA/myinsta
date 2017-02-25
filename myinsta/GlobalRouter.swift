@@ -23,8 +23,11 @@ class GlobalRouter: NSObject {
   
   // present a view controller to the navigation controller
   func presentViewControllerWithNavigationController(from viewController:UIViewController, to destinationViewController:UIViewController) {
+    // if there is a navigation controller, try to push the new viewcontroller
     if let navController = viewController.navigationController {
       navController.pushViewController(destinationViewController, animated: true)
+    } else { // otherwise, just present it
+      self.presentViewController(from: viewController, to: destinationViewController)
     }
   }
   

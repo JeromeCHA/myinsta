@@ -10,16 +10,37 @@ import UIKit
 
 struct Constantes {
 
+  // all ViewControllers Storyboard ID
   struct ViewControllers {
     static let kLogin = "LoginViewController"
+    static let kHome = "HomeViewController"
   }
   
+  // Storyboards Name
   struct Storyboards {
     static let kMain = "Main" 
   }
   
+  // All about backend
+  struct Backend {
+    
+    // Query Params
+    struct Params {
+      static let kAccessToken = "access_token"
+    }
+    
+  }
+  
+  // All user defaults
   struct UserDefaults {
     static let kAccessToken = "access_token"
+  }
+  
+  // Localizable Strings keys
+  struct Strings {
+    static let kButtonClose = "button_close"
+    static let kAlertTitleError = "alert_title_error"
+    static let kAlertMessageError = "alert_message_error"
   }
   
 }
