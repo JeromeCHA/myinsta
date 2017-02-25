@@ -13,6 +13,9 @@ class GlobalViewController: UIViewController, UIGestureRecognizerDelegate {
   //MARK: - Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    if let _ = self.navigationController {
+      self.makeNavigationBar()
+    }
   }
   
   //MARK: - Private

@@ -16,6 +16,11 @@ struct Constantes {
     static let kHome = "HomeViewController"
   }
   
+  // all navigation controllers
+  struct NavigationControllers {
+    static let kHome = "HomeNavigationController"
+  }
+  
   // Storyboards Name
   struct Storyboards {
     static let kMain = "Main" 
@@ -41,6 +46,10 @@ struct Constantes {
     static let kButtonClose = "button_close"
     static let kAlertTitleError = "alert_title_error"
     static let kAlertMessageError = "alert_message_error"
+    
+    static let kHomeCountsMedia = "home_counts_media"
+    static let kHomeCountsFollows = "home_counts_follows"
+    static let kHomeCountsFollowers = "home_counts_followers"
   }
   
 }

@@ -72,11 +72,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## MoyaObjectMapper
+## Moya-ObjectMapper
 
 The MIT License (MIT)
 
-Copyright (c) 2017 Gustavo Perdomo
+Copyright (c) 2015 Ivan Bruel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

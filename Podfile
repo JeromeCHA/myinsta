@@ -10,6 +10,6 @@ target 'myinsta' do
   pod 'RxCocoa', '~> 3.2'
   pod 'Alamofire', '~> 4.3'
   pod 'AlamofireImage', '~> 3.2'
-  pod 'Moya', '~> 8.0'
-  pod 'MoyaObjectMapper', '~> 1.0'
+  pod 'Moya/RxSwift', '~> 8.0'
+  pod 'Moya-ObjectMapper/RxSwift'
 end

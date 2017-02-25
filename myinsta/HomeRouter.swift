@@ -12,17 +12,27 @@ class HomeRouter: GlobalRouter {
 
   var homeViewController : HomeViewController?
   
-  func getInitViewController() -> HomeViewController? {
+  fileprivate func getInitViewController() -> HomeViewController? {
     self.homeViewController = super.getUIViewControllerFromStoryboard(storyboardName: Constantes.Storyboards.kMain, viewControllerName: Constantes.ViewControllers.kHome) as? HomeViewController
     self.initViper()
     return self.homeViewController
   }
   
+  func getInitNavigationController() -> UINavigationController {
+    let navigationController = self.getUIViewControllerFromStoryboard(storyboardName: Constantes.Storyboards.kMain, viewControllerName: Constantes.NavigationControllers.kHome) as! UINavigationController
+    if let loginVC = self.getInitViewController() {
+      navigationController.viewControllers = [loginVC]
+    }
+    return navigationController
+  }
+  
   fileprivate func initViper() {
     let presenter = HomePresenter()
+    let getUserInfoInteractor = GetUserInfoInteractor()
     
     presenter.router = self
     presenter.viewDelegate = self.homeViewController
+    presenter.getUserInfoInteractor = getUserInfoInteractor
     
     self.homeViewController?.presenter = presenter
   }

@@ -12,6 +12,11 @@
 		BA2E1A561E618D420097892A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A551E618D420097892A /* HomeRouter.swift */; };
 		BA2E1A591E6195EA0097892A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A581E6195EA0097892A /* UIViewControllerExtension.swift */; };
 		BA2E1A5B1E6196250097892A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA2E1A5A1E6196250097892A /* Localizable.strings */; };
+		BA2E1A5D1E61A0B20097892A /* GetUserInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A5C1E61A0B20097892A /* GetUserInfoInteractor.swift */; };
+		BA2E1A5F1E61A1420097892A /* UserInfoResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A5E1E61A1420097892A /* UserInfoResponseEntity.swift */; };
+		BA2E1A611E61A17F0097892A /* UserInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A601E61A17F0097892A /* UserInfoEntity.swift */; };
+		BA2E1A631E61A2160097892A /* UserInfoCountEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A621E61A2160097892A /* UserInfoCountEntity.swift */; };
+		BA2E1A651E61D98E0097892A /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A641E61D98E0097892A /* UIImageViewExtension.swift */; };
 		BADB493E1E6066C900278A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB493D1E6066C900278A4D /* AppDelegate.swift */; };
 		BADB49401E6066C900278A4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB493F1E6066C900278A4D /* LoginViewController.swift */; };
 		BADB49431E6066C900278A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADB49411E6066C900278A4D /* Main.storyboard */; };
@@ -41,6 +46,11 @@
 		BA2E1A551E618D420097892A /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		BA2E1A581E6195EA0097892A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		BA2E1A5A1E6196250097892A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BA2E1A5C1E61A0B20097892A /* GetUserInfoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserInfoInteractor.swift; sourceTree = "<group>"; };
+		BA2E1A5E1E61A1420097892A /* UserInfoResponseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoResponseEntity.swift; sourceTree = "<group>"; };
+		BA2E1A601E61A17F0097892A /* UserInfoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoEntity.swift; sourceTree = "<group>"; };
+		BA2E1A621E61A2160097892A /* UserInfoCountEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCountEntity.swift; sourceTree = "<group>"; };
+		BA2E1A641E61D98E0097892A /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		BADB493A1E6066C900278A4D /* myinsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myinsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADB493D1E6066C900278A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BADB493F1E6066C900278A4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +115,9 @@
 		BA2E1A4D1E618CF10097892A /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				BA2E1A5E1E61A1420097892A /* UserInfoResponseEntity.swift */,
+				BA2E1A601E61A17F0097892A /* UserInfoEntity.swift */,
+				BA2E1A621E61A2160097892A /* UserInfoCountEntity.swift */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -120,6 +133,7 @@
 		BA2E1A4F1E618CFB0097892A /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				BA2E1A5C1E61A0B20097892A /* GetUserInfoInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -137,6 +151,7 @@
 			children = (
 				BADB496F1E609E0C00278A4D /* StringExtension.swift */,
 				BA2E1A581E6195EA0097892A /* UIViewControllerExtension.swift */,
+				BA2E1A641E61D98E0097892A /* UIImageViewExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -403,6 +418,7 @@
 				BADB49621E60833F00278A4D /* LoginPresenter.swift in Sources */,
 				BADB495E1E60808900278A4D /* MIChart.swift in Sources */,
 				BA2E1A591E6195EA0097892A /* UIViewControllerExtension.swift in Sources */,
+				BA2E1A631E61A2160097892A /* UserInfoCountEntity.swift in Sources */,
 				BADB49401E6066C900278A4D /* LoginViewController.swift in Sources */,
 				BADB496E1E609CC700278A4D /* UserDefaultsManager.swift in Sources */,
 				BADB496C1E608D9000278A4D /* ServicesManager.swift in Sources */,
@@ -410,13 +426,17 @@
 				BADB493E1E6066C900278A4D /* AppDelegate.swift in Sources */,
 				BADB49581E607B2B00278A4D /* LoginRouter.swift in Sources */,
 				BA2E1A561E618D420097892A /* HomeRouter.swift in Sources */,
+				BA2E1A611E61A17F0097892A /* UserInfoEntity.swift in Sources */,
+				BA2E1A5F1E61A1420097892A /* UserInfoResponseEntity.swift in Sources */,
 				BADB495B1E607FF200278A4D /* GlobalViewController.swift in Sources */,
 				BADB49701E609E0C00278A4D /* StringExtension.swift in Sources */,
 				BADB49681E60884700278A4D /* InstagramService.swift in Sources */,
 				BADB496A1E608A2400278A4D /* Environment.swift in Sources */,
+				BA2E1A651E61D98E0097892A /* UIImageViewExtension.swift in Sources */,
 				BADB49641E60845100278A4D /* GlobalRouter.swift in Sources */,
 				BADB49601E60831A00278A4D /* Constantes.swift in Sources */,
 				BADB49561E607B1000278A4D /* RetreiveTokenInteractor.swift in Sources */,
+				BA2E1A5D1E61A0B20097892A /* GetUserInfoInteractor.swift in Sources */,
 				BA2E1A541E618D310097892A /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

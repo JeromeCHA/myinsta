@@ -11,3 +11,7 @@
 "alert_title_error"="Oups";
 
 "alert_message_error"="An error occurs";
+
+"home_counts_media"="%d medias";
+"home_counts_follows"="%d follows";
+"home_counts_followers"="%d followers";
