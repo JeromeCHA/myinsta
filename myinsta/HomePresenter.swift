@@ -9,6 +9,7 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import SVProgressHUD
 
 class HomePresenter: NSObject {
   
@@ -19,12 +20,15 @@ class HomePresenter: NSObject {
   fileprivate let disposeBag = DisposeBag()
   
   func getMediaRecent() {
+    SVProgressHUD.show()
     self.getMediaRecentInteractor?.getMediaRecent()
       .observeOn(MainScheduler.asyncInstance)
       .subscribe(onNext: { (mediaRecentResponseEntity) in
+        SVProgressHUD.dismiss()
         // update view
         self.viewDelegate?.updateListMedia(mediaRecentResponseEntity)
       }, onError: { (error) in
+        SVProgressHUD.dismiss()
         // display error
         self.viewDelegate?.displayErrorMessage()
       }).addDisposableTo(self.disposeBag)

@@ -12,4 +12,5 @@ target 'myinsta' do
   pod 'AlamofireImage', '~> 3.2'
   pod 'Moya/RxSwift', '~> 8.0'
   pod 'Moya-ObjectMapper/RxSwift'
+  pod 'SVProgressHUD', '~> 2.1'
 end

@@ -1,0 +1,14 @@
+//
+//  myinsta-Bridging-Header.pch
+//  myinsta
+//
+//  Created by Jérôme Cha on 27/02/2017.
+//  Copyright © 2017 Jérôme Cha. All rights reserved.
+//
+
+#ifndef myinsta_Bridging_Header_pch
+#define myinsta_Bridging_Header_pch
+
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#endif /* myinsta_Bridging_Header_pch */

@@ -9,6 +9,7 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import SVProgressHUD
 
 class LoginPresenter: NSObject {
 
@@ -19,6 +20,7 @@ class LoginPresenter: NSObject {
   fileprivate let disposeBag = DisposeBag()
   
   func retrieveAccessToken(url:String) {
+    SVProgressHUD.show()
     // retreive the access token
     retreiveTokenInteractor?.retrieveAccessToken(url: url)
       .observeOn(MainScheduler.asyncInstance)
@@ -26,6 +28,7 @@ class LoginPresenter: NSObject {
         // Display message
         self.viewDelegate?.displayErrorMessage()
       }, onCompleted: {
+        SVProgressHUD.dismiss()
         // Success -> go to Profile
         self.router?.goToProfile()
       }).addDisposableTo(self.disposeBag)

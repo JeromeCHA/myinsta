@@ -81,6 +81,7 @@
 		BA111D041E6328A800F590E1 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		BA111D061E6328B400F590E1 /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		BA111D0A1E63392D00F590E1 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		BA111D0C1E633F7300F590E1 /* myinsta-Bridging-Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myinsta-Bridging-Header.pch"; sourceTree = "<group>"; };
 		BA2E1A511E618D170097892A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BA2E1A531E618D310097892A /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		BA2E1A551E618D420097892A /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
@@ -365,6 +366,7 @@
 				BADB49461E6066C900278A4D /* LaunchScreen.storyboard */,
 				BADB49491E6066C900278A4D /* Info.plist */,
 				BA2E1A5A1E6196250097892A /* Localizable.strings */,
+				BA111D0C1E633F7300F590E1 /* myinsta-Bridging-Header.pch */,
 			);
 			path = myinsta;
 			sourceTree = "<group>";
@@ -765,6 +767,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerome.myinsta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "myinsta/myinsta-Bridging-Header.pch";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -780,6 +783,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerome.myinsta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "myinsta/myinsta-Bridging-Header.pch";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
