@@ -1,5 +1,5 @@
 //
-//  HomeRouter.swift
+//  ProfileRouter.swift
 //  myinsta
 //
 //  Created by Jérôme Cha on 25/02/2017.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class HomeRouter: GlobalRouter {
+class ProfileRouter: GlobalRouter {
 
-  var homeViewController : HomeViewController?
+  var profileViewController : ProfileViewController?
   
-  fileprivate func getInitViewController() -> HomeViewController? {
-    self.homeViewController = super.getUIViewControllerFromStoryboard(storyboardName: Constantes.Storyboards.kMain, viewControllerName: Constantes.ViewControllers.kHome) as? HomeViewController
+  fileprivate func getInitViewController() -> ProfileViewController? {
+    self.profileViewController = super.getUIViewControllerFromStoryboard(storyboardName: Constantes.Storyboards.kMain, viewControllerName: Constantes.ViewControllers.kProfile) as? ProfileViewController
     self.initViper()
-    return self.homeViewController
+    return self.profileViewController
   }
   
   func getInitNavigationController() -> UINavigationController {
@@ -27,14 +27,14 @@ class HomeRouter: GlobalRouter {
   }
   
   fileprivate func initViper() {
-    let presenter = HomePresenter()
+    let presenter = ProfilePresenter()
     let getUserInfoInteractor = GetUserInfoInteractor()
     
     presenter.router = self
-    presenter.viewDelegate = self.homeViewController
+    presenter.viewDelegate = self.profileViewController
     presenter.getUserInfoInteractor = getUserInfoInteractor
     
-    self.homeViewController?.presenter = presenter
+    self.profileViewController?.presenter = presenter
   }
   
 }

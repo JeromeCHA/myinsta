@@ -13,7 +13,7 @@ struct Constantes {
   // all ViewControllers Storyboard ID
   struct ViewControllers {
     static let kLogin = "LoginViewController"
-    static let kHome = "HomeViewController"
+    static let kProfile = "ProfileViewController"
   }
   
   // all navigation controllers

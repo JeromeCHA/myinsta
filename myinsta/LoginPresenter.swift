@@ -26,8 +26,8 @@ class LoginPresenter: NSObject {
         // Display message
         self.viewDelegate?.displayErrorMessage()
       }, onCompleted: {
-        // Success -> go to home
-        self.router?.goToHome()
+        // Success -> go to Profile
+        self.router?.goToProfile()
       }).addDisposableTo(self.disposeBag)
   }
   

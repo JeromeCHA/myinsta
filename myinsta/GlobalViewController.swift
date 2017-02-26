@@ -25,6 +25,7 @@ class GlobalViewController: UIViewController, UIGestureRecognizerDelegate {
     self.navigationController?.navigationBar.tintColor = UIColor.white
     self.navigationController?.navigationBar.isTranslucent = true
     self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+    self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
   }
   
   //MARK: - Public

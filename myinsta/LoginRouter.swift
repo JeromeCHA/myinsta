@@ -32,9 +32,9 @@ class LoginRouter: GlobalRouter {
   
   
   //MARK: - Redirect
-  func goToHome() {
+  func goToProfile() {
     if let loginVC = self.loginViewController {
-      super.presentViewControllerWithNavigationController(from: loginVC, to: HomeRouter().getInitNavigationController())
+      super.presentViewControllerWithNavigationController(from: loginVC, to: ProfileRouter().getInitNavigationController())
     }
   }
   

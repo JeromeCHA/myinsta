@@ -1,5 +1,5 @@
 //
-//  HomePresenter.swift
+//  ProfilePresenter.swift
 //  myinsta
 //
 //  Created by Jérôme Cha on 25/02/2017.
@@ -10,10 +10,10 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class HomePresenter: NSObject {
+class ProfilePresenter: NSObject {
   
-  var viewDelegate : HomeViewDelegate?
-  var router : HomeRouter?
+  var viewDelegate : ProfileViewDelegate?
+  var router : ProfileRouter?
   var getUserInfoInteractor : GetUserInfoInteractor?
 
   fileprivate let disposeBag = DisposeBag()

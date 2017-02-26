@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  ProfileViewController.swift
 //  myinsta
 //
 //  Created by Jérôme Cha on 25/02/2017.
@@ -9,12 +9,12 @@
 import UIKit
 import AlamofireImage
 
-protocol HomeViewDelegate {
+protocol ProfileViewDelegate {
   func displayErrorMessage()
   func initDatas(_ userInfoDatas:UserInfoEntity)
 }
 
-class HomeViewController: GlobalViewController, HomeViewDelegate {
+class ProfileViewController: GlobalViewController, ProfileViewDelegate {
   @IBOutlet weak var profilePictureImageView: UIImageView!
   @IBOutlet weak var usernameLabel: UILabel!
   @IBOutlet weak var bioLabel: UILabel!
@@ -22,7 +22,7 @@ class HomeViewController: GlobalViewController, HomeViewDelegate {
   @IBOutlet weak var nbFollowLabel: UILabel!
   @IBOutlet weak var nbFollowedByLabel: UILabel!
   
-  var presenter : HomePresenter?
+  var presenter : ProfilePresenter?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -42,9 +42,12 @@ class HomeViewController: GlobalViewController, HomeViewDelegate {
   
   // init datas
   func initDatas(_ userInfoDatas:UserInfoEntity) {
-    self.usernameLabel.text = userInfoDatas.username
+    if let username = userInfoDatas.username {
+      self.usernameLabel.text = username
+      super.updateToolbarTitle(username)
+    }
     self.bioLabel.text = userInfoDatas.bio
-    
+
     // use alamofire to get image
     if let profilePicUrl = userInfoDatas.profilePicture, let url = URL(string: profilePicUrl) {
       self.profilePictureImageView.af_setImage(withURL: url)
