@@ -12,18 +12,10 @@ class ProfileRouter: GlobalRouter {
 
   var profileViewController : ProfileViewController?
   
-  fileprivate func getInitViewController() -> ProfileViewController? {
+  func getInitViewController() -> ProfileViewController? {
     self.profileViewController = super.getUIViewControllerFromStoryboard(storyboardName: Constantes.Storyboards.kMain, viewControllerName: Constantes.ViewControllers.kProfile) as? ProfileViewController
     self.initViper()
     return self.profileViewController
-  }
-  
-  func getInitNavigationController() -> UINavigationController {
-    let navigationController = self.getUIViewControllerFromStoryboard(storyboardName: Constantes.Storyboards.kMain, viewControllerName: Constantes.NavigationControllers.kHome) as! UINavigationController
-    if let loginVC = self.getInitViewController() {
-      navigationController.viewControllers = [loginVC]
-    }
-    return navigationController
   }
   
   fileprivate func initViper() {

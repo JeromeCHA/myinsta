@@ -12,6 +12,11 @@
 
 "alert_message_error"="An error occurs";
 
-"home_counts_media"="%d medias";
-"home_counts_follows"="%d follows";
-"home_counts_followers"="%d followers";
+"profile_counts_media"="%d medias";
+"profile_counts_follows"="%d follows";
+"profile_counts_followers"="%d followers";
+
+"media_like"="%d like(s)";
+
+"toolbar_title_profile"="Profile";
+"toolbar_title_recent"="Recents";

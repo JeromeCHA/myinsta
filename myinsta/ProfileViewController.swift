@@ -28,6 +28,8 @@ class ProfileViewController: GlobalViewController, ProfileViewDelegate {
     super.viewDidLoad()
     self.profilePictureImageView.rounded()
     self.presenter?.getUserInfo()
+    super.hideRightBarButtons()
+    super.updateToolbarTitle(Constantes.Strings.kToolbarTitleProfile.localized)
   }
   
   override func didReceiveMemoryWarning() {
@@ -44,7 +46,6 @@ class ProfileViewController: GlobalViewController, ProfileViewDelegate {
   func initDatas(_ userInfoDatas:UserInfoEntity) {
     if let username = userInfoDatas.username {
       self.usernameLabel.text = username
-      super.updateToolbarTitle(username)
     }
     self.bioLabel.text = userInfoDatas.bio
 
@@ -54,9 +55,9 @@ class ProfileViewController: GlobalViewController, ProfileViewDelegate {
     }
     
     if let count = userInfoDatas.counts {
-      self.nbMediaLabel.text = String.init(format: Constantes.Strings.kHomeCountsMedia.localized, count.media ?? 0)
-      self.nbFollowLabel.text = String.init(format: Constantes.Strings.kHomeCountsFollows.localized, count.follows ?? 0)
-      self.nbFollowedByLabel.text = String.init(format: Constantes.Strings.kHomeCountsFollowers.localized, count.followedBy ?? 0)
+      self.nbMediaLabel.text = String.init(format: Constantes.Strings.kProfileCountsMedia.localized, count.media ?? 0)
+      self.nbFollowLabel.text = String.init(format: Constantes.Strings.kProfileCountsFollows.localized, count.follows ?? 0)
+      self.nbFollowedByLabel.text = String.init(format: Constantes.Strings.kProfileCountsFollowers.localized, count.followedBy ?? 0)
     }
   }
 }

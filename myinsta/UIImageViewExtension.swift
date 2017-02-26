@@ -15,6 +15,6 @@ extension UIImageView {
     self.clipsToBounds = true
     self.layer.borderWidth = 1
     self.layer.masksToBounds = true
-    self.layer.borderColor = UIColor.groupTableViewBackground.cgColor
+    self.layer.borderColor = UIColor.lightGray.cgColor
   }
 }

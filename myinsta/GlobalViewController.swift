@@ -26,10 +26,25 @@ class GlobalViewController: UIViewController, UIGestureRecognizerDelegate {
     self.navigationController?.navigationBar.isTranslucent = true
     self.navigationController?.interactivePopGestureRecognizer?.delegate = self
     self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+    
+    let accountButton = UIBarButtonItem(image: UIImage(named: MIChart.Assets.kUser), style: .plain, target: self, action: #selector(accountItemTapped))
+    
+    self.navigationItem.rightBarButtonItems = [accountButton]
   }
   
   //MARK: - Public
-  open func updateToolbarTitle(_ title:String) {
+  func updateToolbarTitle(_ title:String) {
     self.navigationItem.title = title
+  }
+  
+  func hideRightBarButtons() {
+    self.navigationItem.rightBarButtonItems = []
+  }
+  
+  //MAKR: - Redirect
+  @objc private func accountItemTapped() {
+    if let nc = self.navigationController, let profileViewController = ProfileRouter().getInitViewController() {
+      nc.pushViewController(profileViewController, animated: true)
+    }
   }
 }

@@ -14,6 +14,7 @@ struct Constantes {
   struct ViewControllers {
     static let kLogin = "LoginViewController"
     static let kProfile = "ProfileViewController"
+    static let kHome = "HomeViewController"
   }
   
   // all navigation controllers
@@ -24,6 +25,11 @@ struct Constantes {
   // Storyboards Name
   struct Storyboards {
     static let kMain = "Main" 
+  }
+  
+  // All tableViewCell id
+  struct TableViewCells {
+    static let kMediaRecent = "MediaRecentTableViewCell"
   }
   
   // All about backend
@@ -47,9 +53,14 @@ struct Constantes {
     static let kAlertTitleError = "alert_title_error"
     static let kAlertMessageError = "alert_message_error"
     
-    static let kHomeCountsMedia = "home_counts_media"
-    static let kHomeCountsFollows = "home_counts_follows"
-    static let kHomeCountsFollowers = "home_counts_followers"
+    static let kProfileCountsMedia = "profile_counts_media"
+    static let kProfileCountsFollows = "profile_counts_follows"
+    static let kProfileCountsFollowers = "profile_counts_followers"
+    
+    static let kMediaLike = "media_like"
+    
+    static let kToolbarTitleProfile = "toolbar_title_profile"
+    static let kToolbarTitleRecent = "toolbar_title_recent"
   }
   
 }

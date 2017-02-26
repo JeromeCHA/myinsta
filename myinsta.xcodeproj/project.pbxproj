@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA111CDA1E62CCD400F590E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CD91E62CCD400F590E1 /* HomeViewController.swift */; };
+		BA111CDC1E62CD7400F590E1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CDB1E62CD7400F590E1 /* HomePresenter.swift */; };
+		BA111CDE1E62CD8000F590E1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CDD1E62CD8000F590E1 /* HomeRouter.swift */; };
+		BA111CE11E62D56300F590E1 /* GetMediaRecentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CE01E62D56300F590E1 /* GetMediaRecentInteractor.swift */; };
+		BA111CE31E62D59900F590E1 /* MediaRecentResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CE21E62D59900F590E1 /* MediaRecentResponseEntity.swift */; };
+		BA111CE51E62D6E800F590E1 /* MediaEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CE41E62D6E800F590E1 /* MediaEntity.swift */; };
+		BA111CE71E62D9AE00F590E1 /* MediaCommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CE61E62D9AE00F590E1 /* MediaCommentEntity.swift */; };
+		BA111CE91E62DA1400F590E1 /* MediaCaptionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CE81E62DA1400F590E1 /* MediaCaptionEntity.swift */; };
+		BA111CEB1E62DAF200F590E1 /* MediaCaptionFromEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CEA1E62DAF200F590E1 /* MediaCaptionFromEntity.swift */; };
+		BA111CED1E62DC8E00F590E1 /* MediaLikeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CEC1E62DC8E00F590E1 /* MediaLikeEntity.swift */; };
+		BA111CEF1E62DDC600F590E1 /* MediaResolutionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CEE1E62DDC600F590E1 /* MediaResolutionEntity.swift */; };
+		BA111CF11E62DE9500F590E1 /* MediaImageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CF01E62DE9500F590E1 /* MediaImageEntity.swift */; };
+		BA111CF31E62E02700F590E1 /* MediaVideoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CF21E62E02700F590E1 /* MediaVideoEntity.swift */; };
+		BA111CF81E62E4B700F590E1 /* MediaRecentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CF61E62E4B700F590E1 /* MediaRecentTableViewCell.swift */; };
+		BA111CF91E62E4B700F590E1 /* MediaRecentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA111CF71E62E4B700F590E1 /* MediaRecentTableViewCell.xib */; };
+		BA111CFB1E6305CF00F590E1 /* MediaUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CFA1E6305CF00F590E1 /* MediaUserEntity.swift */; };
 		BA2E1A521E618D170097892A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A511E618D170097892A /* ProfileViewController.swift */; };
 		BA2E1A541E618D310097892A /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A531E618D310097892A /* ProfilePresenter.swift */; };
 		BA2E1A561E618D420097892A /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A551E618D420097892A /* ProfileRouter.swift */; };
@@ -41,6 +57,22 @@
 		19ED76B48732932163E03BF5 /* Pods-myinsta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myinsta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myinsta/Pods-myinsta.debug.xcconfig"; sourceTree = "<group>"; };
 		70A11621BAF196829456C43E /* Pods_myinsta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myinsta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2274D45D9A4B2F19ABC8651 /* Pods-myinsta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myinsta.release.xcconfig"; path = "Pods/Target Support Files/Pods-myinsta/Pods-myinsta.release.xcconfig"; sourceTree = "<group>"; };
+		BA111CD91E62CCD400F590E1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BA111CDB1E62CD7400F590E1 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		BA111CDD1E62CD8000F590E1 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		BA111CE01E62D56300F590E1 /* GetMediaRecentInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMediaRecentInteractor.swift; sourceTree = "<group>"; };
+		BA111CE21E62D59900F590E1 /* MediaRecentResponseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaRecentResponseEntity.swift; sourceTree = "<group>"; };
+		BA111CE41E62D6E800F590E1 /* MediaEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaEntity.swift; sourceTree = "<group>"; };
+		BA111CE61E62D9AE00F590E1 /* MediaCommentEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaCommentEntity.swift; sourceTree = "<group>"; };
+		BA111CE81E62DA1400F590E1 /* MediaCaptionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaCaptionEntity.swift; sourceTree = "<group>"; };
+		BA111CEA1E62DAF200F590E1 /* MediaCaptionFromEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaCaptionFromEntity.swift; sourceTree = "<group>"; };
+		BA111CEC1E62DC8E00F590E1 /* MediaLikeEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaLikeEntity.swift; sourceTree = "<group>"; };
+		BA111CEE1E62DDC600F590E1 /* MediaResolutionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaResolutionEntity.swift; sourceTree = "<group>"; };
+		BA111CF01E62DE9500F590E1 /* MediaImageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaImageEntity.swift; sourceTree = "<group>"; };
+		BA111CF21E62E02700F590E1 /* MediaVideoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaVideoEntity.swift; sourceTree = "<group>"; };
+		BA111CF61E62E4B700F590E1 /* MediaRecentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaRecentTableViewCell.swift; sourceTree = "<group>"; };
+		BA111CF71E62E4B700F590E1 /* MediaRecentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaRecentTableViewCell.xib; sourceTree = "<group>"; };
+		BA111CFA1E6305CF00F590E1 /* MediaUserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaUserEntity.swift; sourceTree = "<group>"; };
 		BA2E1A511E618D170097892A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BA2E1A531E618D310097892A /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		BA2E1A551E618D420097892A /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
@@ -90,6 +122,77 @@
 				70A11621BAF196829456C43E /* Pods_myinsta.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA111CD31E62CC6800F590E1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA111CD81E62CC8700F590E1 /* View */,
+				BA111CD71E62CC8100F590E1 /* Interactor */,
+				BA111CD61E62CC7C00F590E1 /* Presenter */,
+				BA111CD51E62CC7700F590E1 /* Entity */,
+				BA111CD41E62CC7300F590E1 /* Router */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		BA111CD41E62CC7300F590E1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BA111CDD1E62CD8000F590E1 /* HomeRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		BA111CD51E62CC7700F590E1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				BA111CE21E62D59900F590E1 /* MediaRecentResponseEntity.swift */,
+				BA111CE41E62D6E800F590E1 /* MediaEntity.swift */,
+				BA111CE61E62D9AE00F590E1 /* MediaCommentEntity.swift */,
+				BA111CFA1E6305CF00F590E1 /* MediaUserEntity.swift */,
+				BA111CE81E62DA1400F590E1 /* MediaCaptionEntity.swift */,
+				BA111CEA1E62DAF200F590E1 /* MediaCaptionFromEntity.swift */,
+				BA111CEC1E62DC8E00F590E1 /* MediaLikeEntity.swift */,
+				BA111CEE1E62DDC600F590E1 /* MediaResolutionEntity.swift */,
+				BA111CF01E62DE9500F590E1 /* MediaImageEntity.swift */,
+				BA111CF21E62E02700F590E1 /* MediaVideoEntity.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		BA111CD61E62CC7C00F590E1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BA111CDB1E62CD7400F590E1 /* HomePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		BA111CD71E62CC8100F590E1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BA111CE01E62D56300F590E1 /* GetMediaRecentInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		BA111CD81E62CC8700F590E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA111CDF1E62D54B00F590E1 /* Cell */,
+				BA111CD91E62CCD400F590E1 /* HomeViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BA111CDF1E62D54B00F590E1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BA111CF61E62E4B700F590E1 /* MediaRecentTableViewCell.swift */,
+				BA111CF71E62E4B700F590E1 /* MediaRecentTableViewCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		BA2E1A4B1E618CCF0097892A /* Profile */ = {
@@ -178,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				BADB49591E607FD800278A4D /* Common */,
+				BA111CD31E62CC6800F590E1 /* Home */,
 				BADB494F1E6075FB00278A4D /* Login */,
 				BA2E1A4B1E618CCF0097892A /* Profile */,
 				BADB493D1E6066C900278A4D /* AppDelegate.swift */,
@@ -357,6 +461,7 @@
 				BA2E1A5B1E6196250097892A /* Localizable.strings in Resources */,
 				BADB49451E6066C900278A4D /* Assets.xcassets in Resources */,
 				BADB49431E6066C900278A4D /* Main.storyboard in Resources */,
+				BA111CF91E62E4B700F590E1 /* MediaRecentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,25 +520,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA111CE51E62D6E800F590E1 /* MediaEntity.swift in Sources */,
 				BADB49621E60833F00278A4D /* LoginPresenter.swift in Sources */,
 				BADB495E1E60808900278A4D /* MIChart.swift in Sources */,
 				BA2E1A591E6195EA0097892A /* UIViewControllerExtension.swift in Sources */,
+				BA111CE31E62D59900F590E1 /* MediaRecentResponseEntity.swift in Sources */,
 				BA2E1A631E61A2160097892A /* UserInfoCountEntity.swift in Sources */,
 				BADB49401E6066C900278A4D /* LoginViewController.swift in Sources */,
+				BA111CF11E62DE9500F590E1 /* MediaImageEntity.swift in Sources */,
+				BA111CEF1E62DDC600F590E1 /* MediaResolutionEntity.swift in Sources */,
 				BADB496E1E609CC700278A4D /* UserDefaultsManager.swift in Sources */,
 				BADB496C1E608D9000278A4D /* ServicesManager.swift in Sources */,
+				BA111CF81E62E4B700F590E1 /* MediaRecentTableViewCell.swift in Sources */,
 				BA2E1A521E618D170097892A /* ProfileViewController.swift in Sources */,
 				BADB493E1E6066C900278A4D /* AppDelegate.swift in Sources */,
 				BADB49581E607B2B00278A4D /* LoginRouter.swift in Sources */,
 				BA2E1A561E618D420097892A /* ProfileRouter.swift in Sources */,
+				BA111CDA1E62CCD400F590E1 /* HomeViewController.swift in Sources */,
 				BA2E1A611E61A17F0097892A /* UserInfoEntity.swift in Sources */,
+				BA111CDC1E62CD7400F590E1 /* HomePresenter.swift in Sources */,
+				BA111CED1E62DC8E00F590E1 /* MediaLikeEntity.swift in Sources */,
 				BA2E1A5F1E61A1420097892A /* UserInfoResponseEntity.swift in Sources */,
 				BADB495B1E607FF200278A4D /* GlobalViewController.swift in Sources */,
+				BA111CF31E62E02700F590E1 /* MediaVideoEntity.swift in Sources */,
 				BADB49701E609E0C00278A4D /* StringExtension.swift in Sources */,
 				BADB49681E60884700278A4D /* InstagramService.swift in Sources */,
 				BADB496A1E608A2400278A4D /* Environment.swift in Sources */,
+				BA111CE11E62D56300F590E1 /* GetMediaRecentInteractor.swift in Sources */,
+				BA111CEB1E62DAF200F590E1 /* MediaCaptionFromEntity.swift in Sources */,
+				BA111CFB1E6305CF00F590E1 /* MediaUserEntity.swift in Sources */,
+				BA111CDE1E62CD8000F590E1 /* HomeRouter.swift in Sources */,
 				BA2E1A651E61D98E0097892A /* UIImageViewExtension.swift in Sources */,
+				BA111CE71E62D9AE00F590E1 /* MediaCommentEntity.swift in Sources */,
 				BADB49641E60845100278A4D /* GlobalRouter.swift in Sources */,
+				BA111CE91E62DA1400F590E1 /* MediaCaptionEntity.swift in Sources */,
 				BADB49601E60831A00278A4D /* Constantes.swift in Sources */,
 				BADB49561E607B1000278A4D /* RetreiveTokenInteractor.swift in Sources */,
 				BA2E1A5D1E61A0B20097892A /* GetUserInfoInteractor.swift in Sources */,
@@ -561,6 +681,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DKZ4T4EY3Y;
 				INFOPLIST_FILE = myinsta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerome.myinsta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -575,6 +696,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DKZ4T4EY3Y;
 				INFOPLIST_FILE = myinsta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerome.myinsta;
 				PRODUCT_NAME = "$(TARGET_NAME)";

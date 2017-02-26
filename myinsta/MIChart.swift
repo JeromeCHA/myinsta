@@ -12,4 +12,9 @@ struct MIChart {
   struct Colors {
     static let kBlue = UIColor(red:0.43, green:0.70, blue:0.99, alpha:1.0) //#6db3fc
   }
+  
+  struct Assets {
+    static let kHeart = "heart"
+    static let kUser = "user"
+  }
 }
