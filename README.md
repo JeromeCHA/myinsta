@@ -20,7 +20,7 @@ This will avoir multiple callback/delegate.
 * [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper)
 
 
-### Account for testing
+### Account for testing /!\ Please use this account /!\
 * login: jeromechatest
 * password : jeromechatest1234
 
