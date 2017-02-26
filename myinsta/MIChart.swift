@@ -16,5 +16,10 @@ struct MIChart {
   struct Assets {
     static let kHeart = "heart"
     static let kUser = "user"
+    static let kBack = "back"
+  }
+  
+  struct Fonts {
+    static let kPacificoRegular = "Pacifico-Regular"
   }
 }

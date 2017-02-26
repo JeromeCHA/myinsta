@@ -58,14 +58,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2zg-RB-zfE">
-                                <rect key="frame" x="122" y="89" width="130" height="130"/>
+                                <rect key="frame" x="122" y="45" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="dnM-y5-g1P"/>
                                     <constraint firstAttribute="width" secondItem="2zg-RB-zfE" secondAttribute="height" multiplier="1:1" id="h1U-bf-nTQ"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aqT-az-DGN">
-                                <rect key="frame" x="20" y="239" width="335" height="117"/>
+                                <rect key="frame" x="20" y="195" width="335" height="117"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDu-Pf-n4Q">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="25"/>
@@ -144,7 +144,7 @@
             <objects>
                 <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="PSK-rk-YB8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="utV-sc-gog">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="utV-sc-gog">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

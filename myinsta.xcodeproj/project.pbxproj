@@ -26,6 +26,7 @@
 		BA111D031E63288D00F590E1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111D021E63288D00F590E1 /* DetailViewController.swift */; };
 		BA111D051E6328A800F590E1 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111D041E6328A800F590E1 /* DetailPresenter.swift */; };
 		BA111D071E6328B400F590E1 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111D061E6328B400F590E1 /* DetailRouter.swift */; };
+		BA111D0B1E633A4800F590E1 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA111D0A1E63392D00F590E1 /* Pacifico-Regular.ttf */; };
 		BA2E1A521E618D170097892A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A511E618D170097892A /* ProfileViewController.swift */; };
 		BA2E1A541E618D310097892A /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A531E618D310097892A /* ProfilePresenter.swift */; };
 		BA2E1A561E618D420097892A /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A551E618D420097892A /* ProfileRouter.swift */; };
@@ -79,6 +80,7 @@
 		BA111D021E63288D00F590E1 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BA111D041E6328A800F590E1 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		BA111D061E6328B400F590E1 /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		BA111D0A1E63392D00F590E1 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		BA2E1A511E618D170097892A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BA2E1A531E618D310097892A /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		BA2E1A551E618D420097892A /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
@@ -251,6 +253,22 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		BA111D081E63391200F590E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA111D091E63391C00F590E1 /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BA111D091E63391C00F590E1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BA111D0A1E63392D00F590E1 /* Pacifico-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		BA2E1A4B1E618CCF0097892A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +423,7 @@
 		BADB49591E607FD800278A4D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BA111D081E63391200F590E1 /* Resources */,
 				BADB49651E60882F00278A4D /* Services */,
 				BADB495C1E60806E00278A4D /* Global */,
 				BA2E1A571E6195C50097892A /* Extensions */,
@@ -517,6 +536,7 @@
 				BADB49481E6066C900278A4D /* LaunchScreen.storyboard in Resources */,
 				BA2E1A5B1E6196250097892A /* Localizable.strings in Resources */,
 				BADB49451E6066C900278A4D /* Assets.xcassets in Resources */,
+				BA111D0B1E633A4800F590E1 /* Pacifico-Regular.ttf in Resources */,
 				BADB49431E6066C900278A4D /* Main.storyboard in Resources */,
 				BA111CF91E62E4B700F590E1 /* MediaRecentTableViewCell.xib in Resources */,
 			);
