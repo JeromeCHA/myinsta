@@ -23,7 +23,6 @@ class HomePresenter: NSObject {
       .observeOn(MainScheduler.asyncInstance)
       .subscribe(onNext: { (mediaRecentResponseEntity) in
         // update view
-        print("MediaRecentResponseEntity : \(mediaRecentResponseEntity)")
         self.viewDelegate?.updateListMedia(mediaRecentResponseEntity)
       }, onError: { (error) in
         // display error
@@ -31,4 +30,12 @@ class HomePresenter: NSObject {
       }).addDisposableTo(self.disposeBag)
   }
 
+  //MARK: - Redirect
+  func goToViewController(_ viewController:UIViewController) {
+    self.router?.goToViewController(viewController)
+  }
+  
+  func goToDetailViewController(_ url:String) {
+    self.router?.goToDetailViewController(url)
+  }
 }

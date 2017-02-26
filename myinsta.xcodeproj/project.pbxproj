@@ -23,6 +23,9 @@
 		BA111CF81E62E4B700F590E1 /* MediaRecentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CF61E62E4B700F590E1 /* MediaRecentTableViewCell.swift */; };
 		BA111CF91E62E4B700F590E1 /* MediaRecentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA111CF71E62E4B700F590E1 /* MediaRecentTableViewCell.xib */; };
 		BA111CFB1E6305CF00F590E1 /* MediaUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111CFA1E6305CF00F590E1 /* MediaUserEntity.swift */; };
+		BA111D031E63288D00F590E1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111D021E63288D00F590E1 /* DetailViewController.swift */; };
+		BA111D051E6328A800F590E1 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111D041E6328A800F590E1 /* DetailPresenter.swift */; };
+		BA111D071E6328B400F590E1 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA111D061E6328B400F590E1 /* DetailRouter.swift */; };
 		BA2E1A521E618D170097892A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A511E618D170097892A /* ProfileViewController.swift */; };
 		BA2E1A541E618D310097892A /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A531E618D310097892A /* ProfilePresenter.swift */; };
 		BA2E1A561E618D420097892A /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E1A551E618D420097892A /* ProfileRouter.swift */; };
@@ -73,6 +76,9 @@
 		BA111CF61E62E4B700F590E1 /* MediaRecentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaRecentTableViewCell.swift; sourceTree = "<group>"; };
 		BA111CF71E62E4B700F590E1 /* MediaRecentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaRecentTableViewCell.xib; sourceTree = "<group>"; };
 		BA111CFA1E6305CF00F590E1 /* MediaUserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaUserEntity.swift; sourceTree = "<group>"; };
+		BA111D021E63288D00F590E1 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BA111D041E6328A800F590E1 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		BA111D061E6328B400F590E1 /* DetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		BA2E1A511E618D170097892A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BA2E1A531E618D310097892A /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		BA2E1A551E618D420097892A /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
@@ -195,6 +201,56 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		BA111CFC1E63286600F590E1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BA111D011E63288100F590E1 /* View */,
+				BA111D001E63287C00F590E1 /* Interactor */,
+				BA111CFF1E63287800F590E1 /* Presenter */,
+				BA111CFE1E63287300F590E1 /* Entity */,
+				BA111CFD1E63286F00F590E1 /* Router */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		BA111CFD1E63286F00F590E1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BA111D061E6328B400F590E1 /* DetailRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		BA111CFE1E63287300F590E1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		BA111CFF1E63287800F590E1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BA111D041E6328A800F590E1 /* DetailPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		BA111D001E63287C00F590E1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		BA111D011E63288100F590E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA111D021E63288D00F590E1 /* DetailViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		BA2E1A4B1E618CCF0097892A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +338,7 @@
 			children = (
 				BADB49591E607FD800278A4D /* Common */,
 				BA111CD31E62CC6800F590E1 /* Home */,
+				BA111CFC1E63286600F590E1 /* Detail */,
 				BADB494F1E6075FB00278A4D /* Login */,
 				BA2E1A4B1E618CCF0097892A /* Profile */,
 				BADB493D1E6066C900278A4D /* AppDelegate.swift */,
@@ -520,11 +577,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA111D031E63288D00F590E1 /* DetailViewController.swift in Sources */,
 				BA111CE51E62D6E800F590E1 /* MediaEntity.swift in Sources */,
 				BADB49621E60833F00278A4D /* LoginPresenter.swift in Sources */,
+				BA111D051E6328A800F590E1 /* DetailPresenter.swift in Sources */,
 				BADB495E1E60808900278A4D /* MIChart.swift in Sources */,
 				BA2E1A591E6195EA0097892A /* UIViewControllerExtension.swift in Sources */,
 				BA111CE31E62D59900F590E1 /* MediaRecentResponseEntity.swift in Sources */,
+				BA111D071E6328B400F590E1 /* DetailRouter.swift in Sources */,
 				BA2E1A631E61A2160097892A /* UserInfoCountEntity.swift in Sources */,
 				BADB49401E6066C900278A4D /* LoginViewController.swift in Sources */,
 				BA111CF11E62DE9500F590E1 /* MediaImageEntity.swift in Sources */,

@@ -13,7 +13,7 @@ protocol HomeViewDelegate {
   func updateListMedia(_ mediaRecentResponseEntity:MediaRecentResponseEntity)
 }
 
-class HomeViewController: GlobalViewController, HomeViewDelegate, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: GlobalViewController, HomeViewDelegate, UITableViewDelegate, UITableViewDataSource, UIViewControllerPreviewingDelegate {
   
   @IBOutlet weak var tableView: UITableView!
   
@@ -24,6 +24,7 @@ class HomeViewController: GlobalViewController, HomeViewDelegate, UITableViewDel
   override func viewDidLoad() {
     super.viewDidLoad()
     self.initTableView()
+    self.init3DTouch()
     self.presenter?.getMediaRecent()
     super.updateToolbarTitle(Constantes.Strings.kToolbarTitleRecent.localized)
   }
@@ -31,6 +32,12 @@ class HomeViewController: GlobalViewController, HomeViewDelegate, UITableViewDel
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  fileprivate func init3DTouch() {
+    if(traitCollection.forceTouchCapability == .available){
+      self.registerForPreviewing(with: self, sourceView: self.view)
+    }
   }
   
   fileprivate func initTableView() {
@@ -61,7 +68,26 @@ class HomeViewController: GlobalViewController, HomeViewDelegate, UITableViewDel
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    if let imageUrl = self.listMedia[indexPath.row].images?.lowResolution?.url {
+      self.presenter?.goToDetailViewController(imageUrl)
+    }
+  }
+  
+  //MARK: - UIViewControllerPreviewingDelegate
+  func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+    self.presenter?.goToViewController(viewControllerToCommit)
+  }
+  
+  func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {    
+    guard let indexPath = tableView.indexPathForRow(at: tableView.convert(location, from: view)) else {
+      return nil
+    }
     
+    guard let imageUrl = self.listMedia[indexPath.row].images?.lowResolution?.url, let detailViewController = DetailRouter().getInitViewController(url: imageUrl) else {
+      return nil
+    }
+    
+    return detailViewController
   }
   
   //MARK: - HomeViewDelegate

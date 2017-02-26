@@ -15,6 +15,7 @@ struct Constantes {
     static let kLogin = "LoginViewController"
     static let kProfile = "ProfileViewController"
     static let kHome = "HomeViewController"
+    static let kDetail = "DetailViewController"
   }
   
   // all navigation controllers
@@ -61,6 +62,7 @@ struct Constantes {
     
     static let kToolbarTitleProfile = "toolbar_title_profile"
     static let kToolbarTitleRecent = "toolbar_title_recent"
+    static let kToolbarTitleDetail = "toolbar_title_detail"
   }
   
 }

@@ -36,4 +36,17 @@ class HomeRouter: GlobalRouter {
     
     self.homeViewController?.presenter = presenter
   }
+  
+  //MARK: - Redirect
+  func goToViewController(_ viewController:UIViewController) {
+    if let homeVC = self.homeViewController {
+      super.presentViewControllerWithNavigationController(from: homeVC, to: viewController)
+    }
+  }
+  
+  func goToDetailViewController(_ url:String) {
+    if let homeVC = self.homeViewController, let detailVC = DetailRouter().getInitViewController(url: url) {
+      super.presentViewControllerWithNavigationController(from: homeVC, to: detailVC)
+    }
+  }
 }
