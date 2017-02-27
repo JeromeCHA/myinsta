@@ -24,13 +24,14 @@ class HomePresenter: NSObject {
     self.getMediaRecentInteractor?.getMediaRecent()
       .observeOn(MainScheduler.asyncInstance)
       .subscribe(onNext: { (mediaRecentResponseEntity) in
-        SVProgressHUD.dismiss()
         // update view
         self.viewDelegate?.updateListMedia(mediaRecentResponseEntity)
       }, onError: { (error) in
         SVProgressHUD.dismiss()
         // display error
         self.viewDelegate?.displayErrorMessage()
+      }, onCompleted: {
+        SVProgressHUD.dismiss()
       }).addDisposableTo(self.disposeBag)
   }
 

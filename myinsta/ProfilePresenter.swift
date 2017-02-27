@@ -25,7 +25,6 @@ class ProfilePresenter: NSObject {
     self.getUserInfoInteractor?.getUserInfo()
       .observeOn(MainScheduler.asyncInstance)
       .subscribe(onNext: { (userInfoResponseEntity) in
-        SVProgressHUD.dismiss()
         // update view
         if let data = userInfoResponseEntity.data {
           self.viewDelegate?.initDatas(data)
@@ -34,6 +33,8 @@ class ProfilePresenter: NSObject {
         SVProgressHUD.dismiss()
         // display error
         self.viewDelegate?.displayErrorMessage()
+      }, onCompleted: { 
+        SVProgressHUD.dismiss()
       }).addDisposableTo(self.disposeBag)
   }
   
