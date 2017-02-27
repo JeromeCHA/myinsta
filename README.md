@@ -10,7 +10,7 @@ This project is a sample of my own iOS architecture (VIPER + Rx + Moya). I used 
 * [VIPER Architecture](https://www.objc.io/issues/13-architecture/viper/)
 ![viper](https://cdn-images-1.medium.com/max/800/1*0pN3BNTXfwKbf08lhwutag.png)
 
-With the VIPER architecture, we need to init all piece of blocks before calling the ViewController. That is the reason why, everything is done in the router. That means, if you need to call a ViewController, you have to call the router.
+With the VIPER architecture, we need to init all pieces of blocks before calling the ViewController. That is the reason why, everything is done in the router. That means, if you need to call a ViewController, you have to call the router.
 
 Here is an example :
 
