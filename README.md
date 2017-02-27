@@ -41,9 +41,9 @@ fileprivate func initViper() {
 And later :
 
 ```swift
-// if you want to go to the Home, Do in your
+// if you want to go to the Home, Do in your Router
 if let homeViewController = HomeRouter().getInitViewController() {
-  self.currentViewController.present(homeViewController, animated: true, completion: nil)
+  self.currentViewController?.present(homeViewController, animated: true, completion: nil)
 }
 ```
 
@@ -62,6 +62,7 @@ func getMediaRecent() -> Observable<MediaRecentResponseEntity> {
 ```
 
 In the presenter :
+
 ```swift
 func getMediaRecent() {
     self.getMediaRecentInteractor?.getMediaRecent()
