@@ -49,8 +49,7 @@ if let homeViewController = HomeRouter().getInitViewController() {
 
 * [RxSwift](http://reactivex.io/)
 
-In this architecture, I used VIPER and RX. Therefore, each interactor will create an observable, and the observer is the presenter.
-This will avoir multiple callback/delegate.
+In this architecture, I used VIPER and RX. Therefore, each interactor will create an observable, and the presenter will be the observer. This will avoir multiple callback/delegate.
 
 Here is an example :
 
