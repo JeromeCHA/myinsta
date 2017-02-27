@@ -20,7 +20,8 @@ Here is an example :
 var homeViewController : HomeViewController?
 
 func getInitViewController() -> HomeViewController? {
-    self.homeViewController = super.getUIViewControllerFromStoryboard(storyboardName: Constantes.Storyboards.kMain, viewControllerName: Constantes.ViewControllers.kHome) as? HomeViewController
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    self.homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController
     self.initViper()
     return self.homeViewController
 }
