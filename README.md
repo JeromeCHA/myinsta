@@ -2,7 +2,7 @@
 
 This project is a sample of my own vision of iOS architecture (VIPER + Rx + Moya). I used Instagram API. You will find the test account down below.
 
-### Requirements
+### Developed in
 * Swift 3
 * iOS 9.0+
 
@@ -19,8 +19,7 @@ This will avoir multiple callback/delegate.
 * [Moya](https://github.com/Moya/Moya)
 * [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper)
 
-
-### Account for testing /!\ Please use this account /!\
+### Account for testing / ! \ Please use this account / ! \
 * login: jeromechatest
 * password : jeromechatest1234
 
@@ -28,3 +27,6 @@ This will avoir multiple callback/delegate.
 * Get recents media
 * Get user profile datas
 * 3d touch to preview pictures
+
+### Notes
+* This project doesn't handle instagram video yet
