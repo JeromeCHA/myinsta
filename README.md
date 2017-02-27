@@ -1,6 +1,6 @@
 # myinsta
 
-This project is a sample of my own vision of iOS architecture (VIPER + Rx + Moya). I used Instagram API. You will find the test account down below.
+This project is a sample of my own iOS architecture (VIPER + Rx + Moya). I used Instagram API. You will find the test account down below. If you want to improve it or there are some mistakes, please feel free to tell me. Any advice is welcome.
 
 ### Developed in
 * Swift 3
@@ -61,7 +61,7 @@ func getMediaRecent() -> Observable<MediaRecentResponseEntity> {
 }
 ```
 
-In the presenter :
+In the Presenter :
 
 ```swift
 func getMediaRecent() {
