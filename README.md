@@ -10,6 +10,42 @@ This project is a sample of my own vision of iOS architecture (VIPER + Rx + Moya
 * [VIPER Architecture](https://www.objc.io/issues/13-architecture/viper/)
 ![viper](https://cdn-images-1.medium.com/max/800/1*0pN3BNTXfwKbf08lhwutag.png)
 
+With the VIPER architecture, we need to init all piece of blocks before calling the ViewController. That is the reason why, everything is done in the router. That means, if you need to call a ViewController, you have to call the router.
+
+Here is an example :
+
+```swift
+// in my HomeRouter.swift
+
+var homeViewController : HomeViewController?
+
+func getInitViewController() -> HomeViewController? {
+    self.homeViewController = super.getUIViewControllerFromStoryboard(storyboardName: Constantes.Storyboards.kMain, viewControllerName: Constantes.ViewControllers.kHome) as? HomeViewController
+    self.initViper()
+    return self.homeViewController
+}
+
+fileprivate func initViper() {
+    let presenter = HomePresenter()
+    let getMediaRecentInteractor = GetMediaRecentInteractor()
+    
+    presenter.router = self
+    presenter.viewDelegate = self.homeViewController
+    presenter.getMediaRecentInteractor = getMediaRecentInteractor
+    
+    self.homeViewController?.presenter = presenter
+}
+```
+
+And later :
+
+```swift
+// if you want to go to the Home, Do in your
+if let homeViewController = HomeRouter().getInitViewController() {
+  self.currentViewController.present(homeViewController, animated: true, completion: nil)
+}
+```
+
 * [RxSwift](http://reactivex.io/)
 
 In this architecture, I used VIPER and RX. Therefore, each interactor will create an observable, and the observer is the presenter.
@@ -30,3 +66,5 @@ This will avoir multiple callback/delegate.
 
 ### Notes
 * This project doesn't handle instagram video yet
+* In this project I used a GlobalRouter to avoid duplicated codes to managed redirects
+* I used a GlobalViewController too in order to manage a custom navigation bar
