@@ -52,6 +52,31 @@ if let homeViewController = HomeRouter().getInitViewController() {
 In this architecture, I used VIPER and RX. Therefore, each interactor will create an observable, and the observer is the presenter.
 This will avoir multiple callback/delegate.
 
+Here is an example :
+
+```swift
+// GetMediaRecentInteractor.swift
+func getMediaRecent() -> Observable<MediaRecentResponseEntity> {
+    let provider = RxMoyaProvider<InstagramService>()
+    return provider.request(InstagramService.mediaRecent).mapObject(MediaRecentResponseEntity.self)
+}
+```
+
+In the presenter :
+```swift
+func getMediaRecent() {
+    self.getMediaRecentInteractor?.getMediaRecent()
+      .observeOn(MainScheduler.asyncInstance)
+      .subscribe(onNext: { (mediaRecentResponseEntity) in
+        // update view
+      }, onError: { (error) in
+        // display error
+      }, onCompleted: {
+        // do something onCompleted
+      }).addDisposableTo(self.disposeBag)
+}
+```
+
 * [Alamofire](https://github.com/Alamofire/Alamofire)
 * [Moya](https://github.com/Moya/Moya)
 * [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper)
